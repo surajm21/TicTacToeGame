@@ -23,16 +23,6 @@ public class TicTacToe {
             }
             return board;
         }
-        static void displayBoard(char[] board) {
-            for (int index = 1; index < board.length; index++) {
-                System.out.print(board[index]);
-                if (index % 3 == 0) {
-                    System.out.println();
-                } else {
-                    System.out.print(" | ");
-                }
-            }
-        }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -41,7 +31,6 @@ public class TicTacToe {
         char playerSymbol = scanner.next().charAt(0);
         scanner.close();
         char computerSymbol = determineComputerSymbol(playerSymbol);
-        displayBoard(board);
     }
 }
 
