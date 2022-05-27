@@ -34,7 +34,6 @@ public class TicTacToe {
         }
     }
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         char[] board = createBoard();
@@ -42,6 +41,7 @@ public class TicTacToe {
         char playerSymbol = scanner.next().charAt(0);
         scanner.close();
         char computerSymbol = determineComputerSymbol(playerSymbol);
+        displayBoard(board);
     }
 }
 
