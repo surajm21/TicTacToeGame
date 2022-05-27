@@ -23,6 +23,17 @@ public class TicTacToe {
             }
             return board;
         }
+        static void displayBoard(char[] board) {
+            for (int index = 1; index < board.length; index++) {
+                System.out.print(board[index]);
+            if (index % 3 == 0) {
+                System.out.println();
+            } else {
+                System.out.print(" | ");
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
